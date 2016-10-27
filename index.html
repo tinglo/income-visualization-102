@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<title>102年各縣市綜合所得統計分析</title>
+</head>
+<body>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;102年各縣市綜合所得統計分析</h1>
+
+<script src="d3.v3.min.js"></script>
+<script src="d3.tip.v0.6.3.js"></script>
+<script src="index.js"></script>
+<div>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="checkbox" id="btn1">顯示所得總平均
+<input type="checkbox" id="btn2">顯示變異數總平均
+&nbsp;&nbsp;&nbsp;&nbsp;
+選擇特性:
+<select id="choose"  onchange="chgSelect();" style="font-family: '新細明體'; font-size: 10pt; color="black" >
+  <option value="0">不顯示</option>
+  <optgroup selected="true" label="以平均為基準"> 
+  <option value="1">所得高，貧富差距大</option>
+　<option value="2">所得高，貧富差距小</option>
+　<option value="3">所得低，貧富差距大</option>
+　<option value="4">所得低，貧富差距小</option>
+</select>
+
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input class="asc" type="radio" name="test">依各區平均所得排序
+<input class="desc" type="radio" name="test">依各區貧富差距排序
+
+</div>
+</body>
